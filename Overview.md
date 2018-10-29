@@ -1,21 +1,19 @@
 # Pathway Overview
 ### Table of Contents  
-1. [Introduction](#introduction) 
-2. [Definition and Scope](#definition)
-	2.1 [Pathway](#pathway)
-	2.2 [Pathway Expression](#pathway-expression)
-3. [Use Cases](#use-cases) 
-4. [Domain Model](#domain-model)  
-	4.1 [Agent](#agent) 
-	4.2 [Pathway](#pathway)
-	4.3 [Pathway Component](#pathway-component)
-	4.4 [Component Condition](#component-condition)
-	4.5 [Rule Set](#rule-set)
-5. [Property and Classes Definitions](#property-and-class-definitions)  
+* [Introduction](#introduction) 
+* [Definition and Scope](#definition)
+	* [Pathway](#pathway)
+	* [Pathway Expression](#pathway-expression)
+* [Use Cases](#use-cases) 
+* [Domain Model](#domain-model)  
+	* [Agent](#agent) 
+	* [Pathway](#pathway)
+	* [Pathway Component](#pathway-component)
+	* [Component Condition](#component-condition)
+	* [Rule Set](#rule-set)
+* [Property and Classes Definitions](#property-and-class-definitions)  
   
 ### 1. Introduction 
-
-@@@
   
 ###  2. Definition
 #### 2.1 Pathway
