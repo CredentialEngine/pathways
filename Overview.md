@@ -9,30 +9,31 @@
 	* Agent
 	* Pathway
 	* Pathway Component
-	* [Component Condition](#component-condition)
-	* [Rule Set](#rule-set)
+	* Component Condition
+	* Rule Set
 * Property and Classes Definitions 
   
 ### 1. Introduction 
   
 ###  2. Definition
+
 #### 2.1 Pathway
 
 >***In the context of Credential Engine, a pathway is comprised of structured sets of objectives and qualifying conditions defining points (milestones) along a route to fulfillment of a job, occupation or career. Qualifying conditions include homogeneous or heterogeneous sets of prescribed, preferred or recommended evidentiary artifacts such as competencies attained (knowledge, skills, abilities), relevant awards, other forms of recognition such as credentials earned and relevant experience.*** 
->
->Candidate artifact classes currently include:
->* Assessment
->* Basic<sup>†</sup>
->* Competency
->* Co-Curricular Activity
->* Course
->* Credential<sup>††</sup>
->* Extracurricular Activity
->* Job
->* Work Experience
->
->*† = Type of artifact not covered by the enumerated set of artifact classes* 
->*†† = CTDL Credential subclasses*
+
+Candidate artifact classes currently include:
+* Assessment
+* Basic<sup>†</sup>
+* Competency
+* Co-Curricular Activity
+* Course
+* Credential<sup>††</sup>
+* Extracurricular Activity
+* Job
+* Work Experience
+
+*† = Type of artifact not covered by the enumerated set of artifact classes*
+*†† = CTDL Credential subclasses*
 
 The pathway's ecosystem is generally comprised of two broad classes:
 1. **Individual Learner Pathway (ILP).** Pathways describing points along the personal journey a learner is pursuing or has pursued; and
