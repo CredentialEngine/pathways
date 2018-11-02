@@ -3,7 +3,7 @@
 * Introduction
 * Definition and Scope
 	* Pathway
-	* Pathway Expression
+	* [Pathway Expression](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#22-pathway-expression)
 * Use Cases
 * Domain Model 
 	* Agent
