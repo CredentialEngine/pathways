@@ -49,13 +49,17 @@ Since the goal of the CE pathway work is to enable the representation of pathway
 
 A *Pathway Expression* is a machine actionable encoding of either a single *Pathway* or an aggregation of logically related *Pathways* defining alternative paths that are bound together in a single expression. 
 
-As defined, the basic building blocks of a *Pathway* form a simple directed graph as illustrated by the following figure where we see a *Pathway* pointing to a *Pathway Component* identified as the destination milestone of the pathway (e.g., a bachelor degree in nursing) and a set of preceding *Pathway Components* defining earlier milestones back to an origin (e.g., a high school diploma).
+As defined, the basic building blocks of a *Pathway* form a simple directed graph as illustrated by the following figure where we see a *Pathway* pointing to a *Pathway Component* identified as the destination milestone or root node of the pathway (e.g., a bachelor degree in nursing) and a set of preceding *Pathway Components* defining earlier milestones back to an origin (e.g., a high school diploma).
 
-![simple_directed_graph](https://user-images.githubusercontent.com/2939046/47940875-4c8dc980-dea9-11e8-83d1-c03124477fdf.png)
+![simple_directed_graph](https://user-images.githubusercontent.com/2939046/47941714-83b1aa00-deac-11e8-9678-8cff6faf2456.png)
 
 However, a *Pathway Expression* may describe more complex circumstances such as alternative paths to the same destination, or a destination may be more diverse---e.g., a career cluster or a more general destination such as programming and software development (see, Illinois Pathways example below).  The following figure illustrates a pathway modeling of alternative paths to the same destination.
 
-![alternatives_directed_graph](https://user-images.githubusercontent.com/2939046/47940744-e739d880-dea8-11e8-89b1-8c653227c84a.png)
+![alternatives_directed_graph](https://user-images.githubusercontent.com/2939046/47941705-7c8a9c00-deac-11e8-8fd1-72daffcf9699.png)
+
+A *Pathway Expression* may define no single point of origin or destination but instead define an cluster of potential origins and destinations. (Note: no single root node defined)
+
+![diverse_alternatives_directed_graph](https://user-images.githubusercontent.com/2939046/47942180-38000000-deae-11e8-8f88-b319a54fc743.png)
 
 ### 3. Use Cases  
 
