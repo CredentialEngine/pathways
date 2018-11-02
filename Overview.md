@@ -1,17 +1,17 @@
 # Pathway Overview
 ### Table of Contents  
-* Introduction
-* Definition and Scope
-	* Pathway
+* [Introduction](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#1-introduction)
+* [Definition and Scope](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#2-definition)
+	* [Pathway](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#21-pathway)
 	* [Pathway Expression](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#22-pathway-expression)
-* Use Cases
-* Domain Model 
-	* Agent
-	* Pathway
-	* Pathway Component
-	* Component Condition
-	* Rule Set
-* Property and Classes Definitions 
+* [Use Cases](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#3-use-cases)
+* [Domain Model](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#4-domain-model) 
+	* [Agent](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#41-agent)
+	* [Pathway](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#42-pathway)
+	* [Pathway Component](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#43-pathway-component)
+	* [Component Condition](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#44-component-condition)
+	* [Rule Set](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#45-rule-set)
+* [Property and Classes Definitions](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#5-property-and-class-definitions) 
   
 ### 1. Introduction 
   
