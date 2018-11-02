@@ -59,7 +59,7 @@ However, a *Pathway Expression* may describe more complex circumstances such as 
 
 A *Pathway Expression* may define no single point of origin or destination but instead define an cluster of potential origins and destinations. (Note: no single root node defined)
 
-![diverse_alternatives_directed_graph](https://user-images.githubusercontent.com/2939046/47942180-38000000-deae-11e8-8f88-b319a54fc743.png)
+![diverse_alternatives_directed_graph](https://user-images.githubusercontent.com/2939046/47942345-dc824200-deae-11e8-9b4c-5da0e1ffef57.png)
 
 ### 3. Use Cases  
 
