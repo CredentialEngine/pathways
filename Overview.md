@@ -78,10 +78,6 @@ A *Pathway Expression* may define no single point of origin or destination but i
 
 ![2018-11-03 pathway trial](https://user-images.githubusercontent.com/2939046/47950833-5d742480-df15-11e8-85dd-4f348bf05d30.png)
 
-#### 4.1 Agent
-
-#### 4.2 Pathway
-
 @@@
 
 <img width="1153" alt="ccc bakersfield-1" src="https://user-images.githubusercontent.com/2939046/47951186-7cc18080-df1a-11e8-8cad-7136a9b3bee0.png">
@@ -90,7 +86,29 @@ A *Pathway Expression* may define no single point of origin or destination but i
 
 <img width="1171" alt="ccc bakersfleld-2" src="https://user-images.githubusercontent.com/2939046/47951190-7f23da80-df1a-11e8-82a1-f8a5b31d3d68.png">
 
+#### 4.1 Agent
+
+#### 4.2 Pathway
+
+
 #### 4.3 Pathway Component
+
+
+Subtypes of PathwayComponent include:
+
+| Subtype       | Description   |
+| ------------- |-------------|
+| AssessmentComponent|Direct, indirect, formative, and summative evaluation or estimation of the nature, ability, or quality of an entity, performance, or outcome of an action.|
+|BasicComponent|General purpose entity for describing a sub-class of PathwayComponent not otherwise covered by the enumerated subclasses.|
+|CocurricularComponent|Activities, programs, and informal learning experiences such as a civic or service activity outside the classroom that supplement and complement what is being learned in the classroom.|
+|CompetencyComponent|Description of measurable or observable knowledge, skills, and abilities necessary to successful performance of a person in a given context. Competency is broadly defined to include assertions of academic, professional, occupational, vocational and life goals, outcomes, and standards, however labeled.|
+|CourseComponent|Structured sequence of one or more educational activities that aims to develop a prescribed set of knowledge, competence or ability of learners.|
+|CredentialComponent|Qualification, achievement, personal or organizational quality, or aspect of an identity typically used to indicate suitability.|
+|ExtracurricularComponent|Entity describing an activity that may be offered or provided by a school, college, or other organization that may not be connected to a course or academic program.|
+|JobComponent|Entity describing a specific job or occupation.|
+|WorkExperienceComponent|Entity describing training experience a person (student) gains while working in a specific job or occupation; frequently unpaid.|
+
+@@@
 
 ```
 {
@@ -107,6 +125,7 @@ A *Pathway Expression* may define no single point of origin or destination but i
 ```
 
 #### 4.4 Component Condition
+
 
 ```
 {
