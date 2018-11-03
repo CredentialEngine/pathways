@@ -89,6 +89,22 @@ A *Pathway Expression* may define no single point of origin or destination but i
 
 #### 4.2 Pathway
 
+@@@
+
+```
+{
+   "@type": "Pathway",
+   "@id": "https://credentialengineregistry.org/pathways/e9a210a8-a77c-41af-b594-4543ef4c2b08",
+   "name": "Associate of Science Degree: Computer Science",
+   "description": "Transfer pathway for the Bakersfield College Associate of Science Degree: Computer Science to the California State University",
+   "hasRootComponent": "https://credentialengineregistry.org/pathways/719cfee7-d380-4ebd-89ca-f6c143d8a3d5",
+   "source": "https://programmap.bakersfieldcollege.edu/academics/interest-clusters/4/programs/Computer_Science-ASSOCIATE_IN_SCIENCE_FOR_TRANSFER",
+   "ownedBy": "https://www.bakersfieldcollege.edu"
+}
+```
+
+@@@
+
 
 #### 4.3 Pathway Component
 
@@ -125,7 +141,7 @@ Subtypes of PathwayComponent include:
 
 #### 4.4 Component Condition
 
-The `ComponentCondition` class "... describes what must be done to complete one `PathwayComponent` (or part thereof) as determined by the issuer of the `Pathway`". An instance of `ComponentCondition` may reference an instance of  `RuleSet` defining the 'algorithm' or process to be applied by the `ComponentCondition` --- e.g., one `RuleSet` might define the constraints on picking a `CourseComponent` from an array of such components while another `RuleSet` might set a level of confidence (or other constraint) that must be met before a `WorkExperienceComponent` satisfies the conditions. 
+The `ComponentCondition` class "... describes what must be done to complete one `PathwayComponent` (or part thereof) as determined by the issuer of the `Pathway`". An instance of `ComponentCondition` must reference an instance of  `RuleSet` defining the 'algorithm' or process to be applied by the `ComponentCondition` --- e.g., one `RuleSet` might define the constraints on picking a `CourseComponent` from an array of such components while another `RuleSet` might set a level of confidence (or other constraint) that must be met before a `WorkExperienceComponent` satisfies the conditions. 
 
 While a `PathwayComponent` may have more than one `ComponentCondition`, each `ComponentCondition` may be associated with only one `RuleSet`. Initially, there is a single, simple, but robust "count rule" ruleset (defined by Badgr/IMS) that defines the constraints on picking one or more or all `PathwayComponent` instances from an array of such component instances. Development of more complex `RuleSets` will occur as experience dictates. 
 
