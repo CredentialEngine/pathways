@@ -86,6 +86,29 @@ A *Pathway Expression* may define no single point of origin or destination but i
 
 #### 4.4 Component Condition
 
+```
+{
+   "@type": "Course",
+   "@id": "https://credentialengineregistry.org/pathways/5c364f83-8826-4e39-ab4a-8b656924f254",
+   "programTerm": "3rd Term",
+   "creditUnitValue": 3.0,
+   "hasCondition": {
+       "@type": "ComponentCondition",
+       "description": "Selection of one course from PHIL B9 or ENGL B28",
+       "hasRuleSet": {
+           "@type": "RuleSet",
+           "ruleSetType": "http://examplePathways.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b",
+           "countRuleType": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b/RequiredNumber",
+           "requiredNumber": 1
+       },
+       "targetComponent": [
+           "https://credentialengineregistry.org/pathways/38567f64-e2ce-4883-8521-08e70da7a5be", 
+           "https://credentialengineregistry.org/pathways/bae6587a-8506-4817-832a-04bf21177e48"
+       ]
+    }
+}
+```
+
 #### 4.5 Rule Set
 
 ### 5. Property and Class Definitions
