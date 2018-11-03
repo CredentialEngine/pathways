@@ -10,8 +10,7 @@
 	* [Pathway](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#42-pathway)
 	* [Pathway Component](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#43-pathway-component)
 	* [Component Condition](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#44-component-condition)
-	* [Rule Set](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#45-rule-set)
-* [Property and Classes Definitions](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#5-property-and-class-definitions) 
+ 
   
 ### 1. Introduction 
   
@@ -96,7 +95,7 @@ A *Pathway Expression* may define no single point of origin or destination but i
 
 Subtypes of PathwayComponent include:
 
-| Subtype       | Description   |
+| Subclass       | Description   |
 | ------------- |-------------|
 | AssessmentComponent|Direct, indirect, formative, and summative evaluation or estimation of the nature, ability, or quality of an entity, performance, or outcome of an action.|
 |BasicComponent|General purpose entity for describing a sub-class of PathwayComponent not otherwise covered by the enumerated subclasses.|
@@ -126,10 +125,16 @@ Subtypes of PathwayComponent include:
 
 #### 4.4 Component Condition
 
+The `ComponentCondition` class "... describes what must be done to complete one `PathwayComponent` (or part thereof) as determined by the issuer of the `Pathway`". An instance of `PathwayComponent` optionally has an instance of  `RuleSet` defining the 'algorithm' or process to be applied by the `ComponentCondition` --- e.g., one `RuleSet` might define the constraints on picking a `CourseComponent` from an array of such components while another `RuleSet` might set a level of confidence (or other constraint) that must be met before a `WorkExperienceComponent` satisfies the conditions. 
+
+While a `PathwayComponent` may have more than one `ComponentCondition`, each `ComponentCondition` may be associated with only one `RuleSet`. Initially, there is a single, simple, but robust count rule ruleset (defined by IMS) that defines the constraints on picking one or more or all `PathwayComponent` instances from an array of such component instances. Development of more complex `RuleSets` will occur as experience may dictate. 
+
+The following JSON-LD code snippet illustrates an instance of `CourseComponent` that uses the "count rule" ruleset to pick 1 `PathwayComponent` from an array of two such components. Note that the `RuleSet` has been identified by example URI--uniquely identifying `RuleSet` globally.
+
 
 ```
 {
-   "@type": "Course",
+   "@type": "CourseComponent",
    "@id": "https://credentialengineregistry.org/pathways/5c364f83-8826-4e39-ab4a-8b656924f254",
    "programTerm": "3rd Term",
    "creditUnitValue": 3.0,
@@ -150,7 +155,6 @@ Subtypes of PathwayComponent include:
 }
 ```
 
-#### 4.5 Rule Set
 
 ### 5. Property and Class Definitions
 
