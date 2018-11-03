@@ -158,7 +158,7 @@ The following JSON-LD example code snippet illustrates an instance of `CourseCom
        "description": "Selection of one course from PHIL B9 or ENGL B28",
        "hasRuleSet": {
            "@type": "RuleSet",
-           "ruleSetType": "http://examplePathways.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b",
+           "ruleSetType": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b",
            "countRuleType": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b/RequiredNumber",
            "requiredNumber": 1
        },
