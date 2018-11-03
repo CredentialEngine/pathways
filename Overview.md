@@ -82,7 +82,29 @@ A *Pathway Expression* may define no single point of origin or destination but i
 
 #### 4.2 Pathway
 
+@@@
+
+<img width="1153" alt="ccc bakersfield-1" src="https://user-images.githubusercontent.com/2939046/47951186-7cc18080-df1a-11e8-8cad-7136a9b3bee0.png">
+
+@@@
+
+<img width="1171" alt="ccc bakersfleld-2" src="https://user-images.githubusercontent.com/2939046/47951190-7f23da80-df1a-11e8-82a1-f8a5b31d3d68.png">
+
 #### 4.3 Pathway Component
+
+```
+{
+   "@type": "Course",
+   "@id": "https://credentialengineregistry.org/pathways/11360165-b900-41e3-9b5b-7be2ef7198b5",
+   "name": "Programming Concepts and Methology II",
+   "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
+   "creditUnitValue": 3.0,
+   "courseCode": "COMP B12",
+   "programTerm": "2nd Term",
+   "programLevel": "Core",
+   "prerequisite": "https://credentialengineregistry.org/pathways/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb"         
+}
+```
 
 #### 4.4 Component Condition
 
