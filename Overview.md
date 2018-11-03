@@ -84,7 +84,6 @@ A *Pathway Expression* may define no single point of origin or destination but i
 
 @@@
 
-<img width="1171" alt="ccc bakersfleld-2" src="https://user-images.githubusercontent.com/2939046/47951190-7f23da80-df1a-11e8-82a1-f8a5b31d3d68.png">
 
 #### 4.1 Agent
 
