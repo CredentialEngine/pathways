@@ -10,6 +10,8 @@
 	* [Pathway](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#42-pathway)
 	* [Pathway Component](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#43-pathway-component)
 	* [Component Condition](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#44-component-condition)
+        * [Term Definitions](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#5-property-and-class-definitions)
+        * Example Encoding
  
   
 ### 1. Introduction 
@@ -144,7 +146,7 @@ The `ComponentCondition` class "... describes what must be done to complete one 
 
 While a `PathwayComponent` may have more than one `ComponentCondition`, each `ComponentCondition` may be associated with only one `RuleSet`. Initially, we are using a simple, but widely applicable "count rule" ruleset (by Badgr/IMS) that defines the constraints on picking one or more or all `PathwayComponent` instances from an array of such component instances. Development of more complex `RuleSets` will occur as experience requires. 
 
-The following JSON-LD example code snippet illustrates an instance of `CourseComponent` with a `ComponentCondition` that uses the "count rule" to pick one `PathwayComponent` from an array of two such components. Note that the `RuleSet` has been identified by an example URI--uniquely identifying it globally.
+The following JSON-LD example code snippet illustrates an instance of `CourseComponent` with a `ComponentCondition` that uses the "count rule" to pick one `PathwayComponent` from an array of two such candidate (target) components. Note that the `RuleSet` has been identified by an example URI--uniquely identifying it globally.
 
 
 ```
@@ -171,7 +173,7 @@ The following JSON-LD example code snippet illustrates an instance of `CourseCom
 ```
 
 
-### 5. Property and Class Definitions
+### 5. Term Definitions
 
 The CE Pathway's domain model is currently comprised of the following:
 
@@ -183,3 +185,7 @@ The CE Pathway's domain model is currently comprised of the following:
 	 * 31 existing properties 
 
 A complete listing of the defined properties and classes (terms) including their definitions can be found at [Pathway Terms](https://github.com/CredentialEngine/vocabularies/issues/546). 
+
+### 6. Example Encoding
+
+A full JSON-LD encoding of the Bakersfield College pathway used above can be [found here](https://github.com/CredentialEngine/vocabularies/blob/master/Pathway-Examples/Bakersfield_AS_CS_pathway-CSU_transfer.json).
