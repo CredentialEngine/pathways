@@ -76,7 +76,7 @@ A *Pathway Expression* may define no single point of origin or destination but i
   
 ### 4. Domain Model
 
-![2018-10-25 pathway trial](https://user-images.githubusercontent.com/2939046/47950751-ebe7a680-df13-11e8-9878-c7a342756177.png)
+![2018-11-03 pathway trial](https://user-images.githubusercontent.com/2939046/47950833-5d742480-df15-11e8-85dd-4f348bf05d30.png)
 
 #### 4.1 Agent
 
