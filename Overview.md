@@ -125,11 +125,11 @@ Subtypes of PathwayComponent include:
 
 #### 4.4 Component Condition
 
-The `ComponentCondition` class "... describes what must be done to complete one `PathwayComponent` (or part thereof) as determined by the issuer of the `Pathway`". An instance of `PathwayComponent` optionally has an instance of  `RuleSet` defining the 'algorithm' or process to be applied by the `ComponentCondition` --- e.g., one `RuleSet` might define the constraints on picking a `CourseComponent` from an array of such components while another `RuleSet` might set a level of confidence (or other constraint) that must be met before a `WorkExperienceComponent` satisfies the conditions. 
+The `ComponentCondition` class "... describes what must be done to complete one `PathwayComponent` (or part thereof) as determined by the issuer of the `Pathway`". An instance of `ComponentCondition` may reference an instance of  `RuleSet` defining the 'algorithm' or process to be applied by the `ComponentCondition` --- e.g., one `RuleSet` might define the constraints on picking a `CourseComponent` from an array of such components while another `RuleSet` might set a level of confidence (or other constraint) that must be met before a `WorkExperienceComponent` satisfies the conditions. 
 
-While a `PathwayComponent` may have more than one `ComponentCondition`, each `ComponentCondition` may be associated with only one `RuleSet`. Initially, there is a single, simple, but robust count rule ruleset (defined by IMS) that defines the constraints on picking one or more or all `PathwayComponent` instances from an array of such component instances. Development of more complex `RuleSets` will occur as experience may dictate. 
+While a `PathwayComponent` may have more than one `ComponentCondition`, each `ComponentCondition` may be associated with only one `RuleSet`. Initially, there is a single, simple, but robust "count rule" ruleset (defined by Badgr/IMS) that defines the constraints on picking one or more or all `PathwayComponent` instances from an array of such component instances. Development of more complex `RuleSets` will occur as experience dictates. 
 
-The following JSON-LD code snippet illustrates an instance of `CourseComponent` that uses the "count rule" ruleset to pick 1 `PathwayComponent` from an array of two such components. Note that the `RuleSet` has been identified by example URI--uniquely identifying `RuleSet` globally.
+The following JSON-LD example code snippet illustrates an instance of `CourseComponent` with a `ComponentCondition` that uses the "count rule" to pick one `PathwayComponent` from an array of two such components. Note that the `RuleSet` has been identified by an example URI--uniquely identifying it globally.
 
 
 ```
