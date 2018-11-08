@@ -57,7 +57,7 @@ However, a *Pathway Expression* may describe more complex circumstances such as 
 
 ![alternatives_directed_graph](https://user-images.githubusercontent.com/2939046/47941705-7c8a9c00-deac-11e8-8fd1-72daffcf9699.png)
 
-A *Pathway Expression* may define no single point of origin or destination but instead define an cluster of potential origins and destinations. (Note: no single root node defined)
+A *Pathway Expression* may define no single point of origin or destination but instead define a cluster of potential origins and destinations. (Note: no single root node defined)
 
 ![diverse_alternatives_directed_graph](https://user-images.githubusercontent.com/2939046/47952505-b059d600-df2d-11e8-8a4e-ba21c7899edd.png)
 
@@ -80,7 +80,7 @@ A *Pathway Expression* may define no single point of origin or destination but i
 
 @@@
 
-<img width="1153" alt="ccc bakersfield-1" src="https://user-images.githubusercontent.com/2939046/47951186-7cc18080-df1a-11e8-8cad-7136a9b3bee0.png">
+<img width="750" alt="ccc bakersfield-1" src="https://user-images.githubusercontent.com/2939046/47951186-7cc18080-df1a-11e8-8cad-7136a9b3bee0.png">
 
 @@@
 
