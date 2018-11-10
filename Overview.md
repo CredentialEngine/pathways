@@ -55,7 +55,7 @@ As defined, the basic building blocks of a *Pathway* form a simple directed grap
 
 However, a *Pathway Expression* may describe more complex circumstances such as alternative paths to the same destination, or a destination may be more diverse---e.g., a career cluster or a more general destination such as programming and software development (see, Illinois Pathways example below).  The following figure illustrates a pathway modeling of alternative paths to the same destination.
 
-![alternatives_directed_graph](https://user-images.githubusercontent.com/2939046/47941705-7c8a9c00-deac-11e8-8fd1-72daffcf9699.png)
+![alternatives_directed_graph](https://user-images.githubusercontent.com/2939046/48304822-27b2db00-e4d5-11e8-89a2-dac028bfe86a.png)
 
 A *Pathway Expression* may define no single point of origin or destination but instead define a cluster of potential origins and destinations. (Note: no single root node defined)
 
