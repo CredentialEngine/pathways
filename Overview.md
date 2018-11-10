@@ -51,7 +51,7 @@ A *Pathway Expression* is a machine actionable encoding of either a single *Path
 
 As defined, the basic building blocks of a *Pathway* form a simple directed graph as illustrated by the following figure where we see a *Pathway* pointing to a *Pathway Component* identified as the destination milestone or root node of the pathway (e.g., a bachelor degree in nursing) and a set of preceding *Pathway Components* defining earlier milestones back to an origin (e.g., a high school diploma).
 
-![simple_directed_graph](https://user-images.githubusercontent.com/2939046/47941714-83b1aa00-deac-11e8-9678-8cff6faf2456.png)
+![simple_directed_graph](https://user-images.githubusercontent.com/2939046/48304790-89bf1080-e4d4-11e8-9c3b-2a5ae24093ae.png)
 
 However, a *Pathway Expression* may describe more complex circumstances such as alternative paths to the same destination, or a destination may be more diverse---e.g., a career cluster or a more general destination such as programming and software development (see, Illinois Pathways example below).  The following figure illustrates a pathway modeling of alternative paths to the same destination.
 
@@ -75,6 +75,7 @@ A *Pathway Expression* may define no single point of origin or destination but i
 		b. discover relevant credentials for each competency on a pathway/job profile from multiple providers.
   
 ### 4. Domain Model
+
 ![2018-11-10 pathway trial](https://user-images.githubusercontent.com/2939046/48304734-2aaccc00-e4d3-11e8-98a8-f81257411a26.png)
 
 @@@
