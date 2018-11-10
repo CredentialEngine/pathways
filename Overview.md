@@ -75,8 +75,7 @@ A *Pathway Expression* may define no single point of origin or destination but i
 		b. discover relevant credentials for each competency on a pathway/job profile from multiple providers.
   
 ### 4. Domain Model
-
-![2018-11-03 pathway trial](https://user-images.githubusercontent.com/2939046/47950833-5d742480-df15-11e8-85dd-4f348bf05d30.png)
+![2018-11-10 pathway trial](https://user-images.githubusercontent.com/2939046/48304734-2aaccc00-e4d3-11e8-98a8-f81257411a26.png)
 
 @@@
 
