@@ -87,6 +87,8 @@ A *Pathway Expression* may define no single point of origin or destination but i
 
 #### 4.1 Agent
 
+The Pathway's model does not, at this time, define any properties for the `Agent` class and assumes that appropriate agents defined within relevant contexts will be referenced from the `Pathway` entity as `ownerBy` the `Pathway`. For example, an instance of the `ctdl:CredentialOrganization` class could use it's `owns` property to reference one of its pathways and that `Pathway` instance could reference it as owner via `ctdl:owns`.
+
 #### 4.2 Pathway
 
 @@@
