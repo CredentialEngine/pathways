@@ -90,8 +90,6 @@ Each class is fined as follows:
 |ComponentCondition|Entity that describes what must be done to complete one PathwayComponent [or part thereof] as determined by the issuer of the Pathway. A ComponentCondition references a single RuleSet entity with values ascertained through application of that RuleSet.|
 |RuleSet|Entity that identifies the rules by which other PathwayComponent instances satisfy a PathwayComponent objective. In order to meet varying circumstances, there will likely be more than one recognized RuleSet.|
 
-The CE 
-
 For the remainder of this *Overview*, we'll illustrate each class of entity using snippets of JSON-LD encoding of a pathway description based on the image below of a transfer pathway for an Associate of Science Degree in Computer Science from Bakersfield College to the California State University. The pathway moves from left to right covering the four terms of a 2-year community college program. The upper half of the image represents the "core" cources for the degree. The horizontal lines between courses represents the course prerequisite linking structure. 
 
 The bottom half of the figure represents general education courses. Unlike the top half, there is no apparent prerequisite structure. Note that the bottom right node in the figure presents a set of alternative history and philosophy courses from which a student is expected to pick one. Note that several other general education components also present such an alternative. We'll address how these kinds of choices are handled below in the section on the model's `ComponentCondition`.
