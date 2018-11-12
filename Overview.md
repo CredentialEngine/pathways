@@ -74,9 +74,23 @@ A *Pathway Expression* may define no single point of origin or destination but i
 		a. represent current achievement of desired competencies based on competency alignments of held credentials.
 		b. discover relevant credentials for each competency on a pathway/job profile from multiple providers.
   
-### 4. Domain Model
+### 4. Conceptual Model
+
+The CE pathways conceptual module is comprised of five classes: `Agent`, `Pathway`, `PathwayComponent`, `ComponentCondition` and `RuleSet`. These classes and the primary relationships between them are illustrated below.
 
 ![2018-11-10 pathway trial](https://user-images.githubusercontent.com/2939046/48304734-2aaccc00-e4d3-11e8-98a8-f81257411a26.png)
+
+Each class is fined as follows:
+
+| Class       | Description   |
+| ------------- |-------------|
+|Agent|Organization or person that acts or has the power to act.Entity that serves as a defined point along the route of a Pathway.|
+|Pathway|Entity comprised of structured sets of objectives and qualifying conditions defining points along a route to fulfillment of a job, occupation or career.|
+|PathwayComponent|A PathwayComponent describes an objective and its completion requirements through reference to one or more instances of ComponentCondition. Pathway entity represents a pathway as a whole including a reference to an instance of PathwayComponent that serves as the root or destination node of the pathway.|
+|ComponentCondition|Entity that describes what must be done to complete one PathwayComponent [or part thereof] as determined by the issuer of the Pathway. A ComponentCondition references a single RuleSet entity with values ascertained through application of that RuleSet.|
+|RuleSet|Entity that identifies the rules by which other PathwayComponent instances satisfy a PathwayComponent objective. In order to meet varying circumstances, there will likely be more than one recognized RuleSet.|
+
+The CE 
 
 For the remainder of this *Overview*, we'll illustrate each class of entity using snippets of JSON-LD encoding of a pathway description based on the image below of a transfer pathway for an Associate of Science Degree in Computer Science from Bakersfield College to the California State University. The pathway moves from left to right covering the four terms of a 2-year community college program. The upper half of the image represents the "core" cources for the degree. The horizontal lines between courses represents the course prerequisite linking structure. 
 
@@ -84,16 +98,14 @@ The bottom half of the figure represents general education courses. Unlike the t
 
 <img width="750" alt="ccc bakersfield-1" src="https://user-images.githubusercontent.com/2939046/47951186-7cc18080-df1a-11e8-8cad-7136a9b3bee0.png">
 
-@@@
-
 
 #### 4.1 Agent
 
-The Pathway's model does not, at this time, define any properties for the `Agent` class and assumes that appropriate agents defined within relevant contexts will be referenced from the `Pathway` entity as `ownerBy` the `Pathway`. For example, an instance of the `ctdl:CredentialOrganization` class could use it's `owns` property to reference one of its pathways and that `Pathway` instance could reference it as owner via `ctdl:owns`.
+The Pathway's model does not define any properties for the `Agent` class and assumes that appropriate agents defined within relevant contexts will be referenced from the `Pathway` entity as `ownerBy` the `Pathway`. For example, an instance of the CTDL `CredentialOrganization` class could use an `ctdl:owns` property to reference one of its pathways. In like fashion, that `Pathway` instance could reference its owner via `ctdl:ownedBy`--as illustrated in the JSON-LD code snippet in the following section.
 
 #### 4.2 Pathway
 
-@@@
+The `Pathway` class 
 
 ```
 {
