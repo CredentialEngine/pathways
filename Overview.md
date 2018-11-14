@@ -99,7 +99,7 @@ The Pathway's model does not define any properties for the `Agent` class and ass
 
 #### 4.2 Pathway
 
-The `Pathway` class describes the pathway as a whole including (but not limited to) name and description of the pathway, reference to its owner, and identifies a root (destination) `PathwayComponent` where such a component is present (see discussion below of `PathwayComponent`).
+The `Pathway` class describes the pathway as a whole including (but not limited to) name and description of the pathway, reference to its owner, and identifies a root (destination) `PathwayComponent` where such a component is present (see discussion below in `PathwayComponent`).
 
 ```
 {
