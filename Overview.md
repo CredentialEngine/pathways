@@ -37,7 +37,7 @@ Candidate artifact classes currently include:
 
 The pathway's ecosystem is generally comprised of two broad classes:
 1. **Individual Learner Pathway (ILP).** Pathways describing points along the personal journey a learner is pursuing or has pursued; and
-2.  **Organizational Pathway (OP),** Pathways describing points along a prescribed or recommended route as defined by organizations, collaborations or institutions.
+2. **Organizational Pathway (OP),** Pathways describing points along a prescribed or recommended route as defined by organizations, collaborations or institutions.
 
 Credential Engine's focus is on the definition and description of OPs and not ILPs. While out of scope of the PWG, the importance of ILPs to OPs should not be underestimated or the need for close collaboration between developers of OP and ILP data models undervalued. A robust and dynamic pathways ecosystems will likely depend on ILP data, along with evolving workforce needs, to inform development of OPs. Thus, collaboration between the work of the PWG and other groups (e.g., IMS [Comprehensive Learner Record Work Group](https://www.imsglobal.org/activity/comprehensive-learner-record) is to make sure CE maximizes the potential for each class of pathway to inform and support the other.
 
@@ -47,19 +47,15 @@ Since the goal of the CE pathway work is to enable the representation of pathway
 
 #### 2.2 Pathway Expression
 
-A *Pathway Expression* is a machine actionable encoding of either a single *Pathway* or an aggregation of logically related *Pathways* defining alternative paths that are bound together in a single expression. 
+A *Pathway Expression* is an informal notion of a machine actionable encoding of either a single *Pathway* or an aggregation of logically related *Pathways* defining alternative paths that are bound together in a single expression. 
 
-As defined, the basic building blocks of a *Pathway* form a simple directed graph as illustrated by the following figure where we see a *Pathway* pointing to a *Pathway Component* identified as the destination milestone or root node of the pathway (e.g., a bachelor degree in nursing) and a set of preceding *Pathway Components* defining earlier milestones back to an origin (e.g., a high school diploma).
+As defined, the basic building blocks of a *Pathway* form a simple (RDF) directed graph as illustrated by the following figure where we see a *Pathway* pointing to a *Pathway Component* identified as the destination milestone or root node of the pathway (e.g., a bachelor degree in nursing) and a set of preceding *Pathway Components* defining earlier milestones back to an origin (e.g., a high school diploma).
 
 ![simple_directed_graph](https://user-images.githubusercontent.com/2939046/48304790-89bf1080-e4d4-11e8-9c3b-2a5ae24093ae.png)
 
 However, a *Pathway Expression* may describe more complex circumstances such as alternative paths to the same destination, or a destination may be more diverse---e.g., a career cluster or a more general destination such as programming and software development (see, Illinois Pathways example below).  The following figure illustrates a pathway modeling of alternative paths to the same destination.
 
 ![alternatives_directed_graph](https://user-images.githubusercontent.com/2939046/48304822-27b2db00-e4d5-11e8-89a2-dac028bfe86a.png)
-
-A *Pathway Expression* may define no single point of origin or destination but instead define a cluster of potential origins and destinations. (Note: no single root node defined)
-
-![diverse_alternatives_directed_graph](https://user-images.githubusercontent.com/2939046/48304847-b6bff300-e4d5-11e8-9991-6c9b6f03a544.png)
 
 ### 3. Use Cases  
 
@@ -85,8 +81,8 @@ Each class is fined as follows:
 | Class       | Description   |
 | ------------- |-------------|
 |Agent|Organization or person that acts or has the power to act.Entity that serves as a defined point along the route of a Pathway.|
-|Pathway|Entity comprised of structured sets of objectives and qualifying conditions defining points along a route to fulfillment of a job, occupation or career.|
-|PathwayComponent|A PathwayComponent describes an objective and its completion requirements through reference to one or more instances of ComponentCondition. Pathway entity represents a pathway as a whole including a reference to an instance of PathwayComponent that serves as the root or destination node of the pathway.|
+|Pathway|Entity comprised of structured sets of objectives and qualifying conditions defining points along a route to fulfillment of a job, occupation or career. Pathway entity represents a pathway as a whole and frequently includes a reference to an instance of PathwayComponent that serves as the root or destination node of the pathway.|
+|PathwayComponent|A PathwayComponent describes an objective and its completion requirements through reference to one or more instances of ComponentCondition.|
 |ComponentCondition|Entity that describes what must be done to complete one PathwayComponent [or part thereof] as determined by the issuer of the Pathway. A ComponentCondition references a single RuleSet entity with values ascertained through application of that RuleSet.|
 |RuleSet|Entity that identifies the rules by which other PathwayComponent instances satisfy a PathwayComponent objective. In order to meet varying circumstances, there will likely be more than one recognized RuleSet.|
 
@@ -103,7 +99,7 @@ The Pathway's model does not define any properties for the `Agent` class and ass
 
 #### 4.2 Pathway
 
-The `Pathway` class 
+The `Pathway` class describes the pathway as a whole including (but not limited to) name and description of the pathway, reference to its owner, and identifies a root (destination) `PathwayComponent` where such a component is present (see discussion below of `PathwayComponent`).
 
 ```
 {
@@ -117,13 +113,10 @@ The `Pathway` class
 }
 ```
 
-@@@
-
-
 #### 4.3 Pathway Component
 
-
-Subtypes of PathwayComponent include:
+The `PathwayComponent` class is a superclass identifying a family of subclasses that define specific `PathwayComponent` sub-types. The `PathwayComponent` represents individual milestones along a pathway's journey. The `PathwayComponents` for a particular `Pathway` may be comprised of instances of a single subclass identified in the table below or a mix of the subclasses.
+Subclasses of PathwayComponent include:
 
 | Subclass       | Description   |
 | ------------- |-------------|
@@ -137,11 +130,15 @@ Subtypes of PathwayComponent include:
 |JobComponent|Entity describing a specific job or occupation.|
 |WorkExperienceComponent|Entity describing training experience a person (student) gains while working in a specific job or occupation; frequently unpaid.|
 
-@@@
+While all of the subclasses share basic descriptive properties, each has additional properties particular to the subclass. While a basic set of properties are set out in the [Pathway Terms](https://github.com/CredentialEngine/vocabularies/issues/546) document, additional properties will be added as experience is gained describing existing pathways.  
+
+Relationships between `PathwayComponents` in a `Pathway` are of two types: (1) simple binary relationships expressed as simple assertions in RDF---e.g., `PathwayComponent`===`prerequisite`===>`PathwayComponent`; and (2) complex relationships expressed through use of the `ComponentCondition` class (see section 4.4)--e.g., where the required condition is to pick a specified number of `PathwayComponents` from an array of available choices.
+
+The following JSON-LD code snippet illustrates a `PathwayComponent` of the subclass `CourseComponent` for the course "Programming Concepts and Methology II" with a simple `prerequisite` assertion.
 
 ```
 {
-   "@type": "Course",
+   "@type": "CourseComponent",
    "@id": "https://credentialengineregistry.org/pathways/11360165-b900-41e3-9b5b-7be2ef7198b5",
    "name": "Programming Concepts and Methology II",
    "creditUnitType": "http://purl.org/ctdl/vocabs/creditUnit/DegreeCredit",
@@ -152,6 +149,8 @@ Subtypes of PathwayComponent include:
    "prerequisite": "https://credentialengineregistry.org/pathways/1f8d3d06-3953-4bd8-8750-7dc5e9a062eb"         
 }
 ```
+
+A *Pathway Expression* may or may not define a single point of origin or destination `PathwayComponent`. The latter may occur where the `Pathway` defines an aggregation of logically related *Pathways* defining alternative path choices that are bound together in a single *pathway expression*. 
 
 #### 4.4 Component Condition
 
