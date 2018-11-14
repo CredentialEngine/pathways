@@ -12,6 +12,9 @@
 	* [Component Condition](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#44-component-condition)
         * [Term Definitions](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#5-term-definitions)
         * [Example Encoding](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#6-example-encoding)
+* Term Definitions
+* Example Encodings
+* Submit Comments
  
   
 ### 1. Introduction 
@@ -116,7 +119,6 @@ The `Pathway` class describes the pathway as a whole including (but not limited 
 #### 4.3 Pathway Component
 
 The `PathwayComponent` class is a superclass identifying a family of subclasses that define specific `PathwayComponent` sub-types. The `PathwayComponent` represents individual milestones along a pathway's journey. The `PathwayComponents` for a particular `Pathway` may be comprised of instances of a single subclass identified in the table below or a mix of the subclasses.
-Subclasses of PathwayComponent include:
 
 | Subclass       | Description   |
 | ------------- |-------------|
@@ -198,6 +200,11 @@ The CE Pathway's domain model is currently comprised of the following:
 
 A complete listing of the defined properties and classes (terms) including their definitions can be found at [Pathway Terms](https://github.com/CredentialEngine/vocabularies/issues/546). 
 
-### 6. Example Encoding
+### 6. Example Encodings
 
 A full JSON-LD encoding of the Bakersfield College pathway used above can be [found here](https://github.com/CredentialEngine/vocabularies/blob/master/Pathway-Examples/Bakersfield_AS_CS_pathway-CSU_transfer.json).
+
+### 7. Submit Comments
+
+Comments on this proposal can be made through either the [Technical Advisory Group (TAG) Google Group forum](https://groups.google.com/forum/?fromgroups#!forum/credentialenginetech), or the [Pathway Working Group (DWG) Google Group forum](https://groups.google.com/a/credentialengine.org/forum/#!forum/credential-engine-pathways-work-group).
+
