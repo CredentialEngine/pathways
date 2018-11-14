@@ -10,11 +10,9 @@
 	* [Pathway](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#42-pathway)
 	* [Pathway Component](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#43-pathway-component)
 	* [Component Condition](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#44-component-condition)
-        * [Term Definitions](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#5-term-definitions)
-        * [Example Encoding](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#6-example-encoding)
-* Term Definitions
-* Example Encodings
-* Submit Comments
+* [Term Definitions](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#5-term-definitions)
+* [Example Encodings](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#6-example-encodings)
+* [Submit Comments](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#7-submit-comments)
  
   
 ### 1. Introduction 
