@@ -77,7 +77,7 @@ The CE pathways conceptual module is comprised of five classes: `Agent`, `Pathwa
 
 ![2018-11-10 pathway trial](https://user-images.githubusercontent.com/2939046/48304734-2aaccc00-e4d3-11e8-98a8-f81257411a26.png)
 
-Each class is fined as follows:
+Each class is defined as follows:
 
 | Class       | Description   |
 | ------------- |-------------|
@@ -128,7 +128,7 @@ The `PathwayComponent` class is a superclass identifying a family of subclasses 
 |CredentialComponent|Qualification, achievement, personal or organizational quality, or aspect of an identity typically used to indicate suitability.|
 |ExtracurricularComponent|Entity describing an activity that may be offered or provided by a school, college, or other organization that may not be connected to a course or academic program.|
 |JobComponent|Entity describing a specific job or occupation.|
-|WorkExperienceComponent|Entity describing training experience a person (student) gains while working in a specific job or occupation; frequently unpaid.|
+|WorkExperienceComponent|Entity describing training experience a person gains while working in a specific job or occupation; frequently unpaid.|
 
 While all of the subclasses share basic descriptive properties, each has additional properties particular to the subclass. While a basic set of properties are set out in the [Pathway Terms](https://github.com/CredentialEngine/vocabularies/issues/546) document, additional properties will be added as experience is gained describing existing pathways.  
 
@@ -156,7 +156,7 @@ A *Pathway Expression* may or may not define a single point of origin or destina
 
 The `ComponentCondition` class "... describes what must be done to complete one `PathwayComponent` (or part thereof) as determined by the issuer of the `Pathway`". An instance of `ComponentCondition` must reference an instance of  `RuleSet` defining the 'algorithm' or process to be applied by the `ComponentCondition` --- e.g., one `RuleSet` might define the constraints on picking a `CourseComponent` from an array of such components while another `RuleSet` might set a level of confidence (or other constraint) that must be met before a `WorkExperienceComponent` satisfies the conditions. 
 
-While a `PathwayComponent` may have more than one `ComponentCondition`, each `ComponentCondition` may be associated with only one `RuleSet`. Initially, we are using a simple, but widely applicable "count rule" ruleset (by Badgr/IMS) that defines the constraints on picking one or more or all `PathwayComponent` instances from an array of such component instances. Development of more complex `RuleSets` will occur as experience requires. 
+While a `PathwayComponent` may have more than one `ComponentCondition`, each `ComponentCondition` may be associated with only one `RuleSet`. Initially, we are using a simple, but widely applicable "count rule" ruleset (by Badgr/IMS) that defines the constraints on picking a number of `PathwayComponent` instances that is less than or equal to an enumerated array of such component instances. Development of more complex `RuleSets` will occur as experience requires. 
 
 The following JSON-LD example code snippet illustrates an instance of `CourseComponent` with a `ComponentCondition` that uses the "count rule" to pick one `PathwayComponent` from an array of two such candidate (target) components. Note that the `RuleSet` has been identified by an example URI--uniquely identifying it globally.
 
