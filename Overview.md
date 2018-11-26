@@ -10,6 +10,7 @@
 	* [Pathway](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#42-pathway)
 	* [Pathway Component](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#43-pathway-component)
 	* [Component Condition](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#44-component-condition)
+	* Rule Set and Rule Set Profile
 * [Term Definitions](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#5-term-definitions)
 * [Example Encodings](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#6-example-encodings)
 * [Submit Comments](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#7-submit-comments)
@@ -156,7 +157,7 @@ A *Pathway Expression* may or may not define a single point of origin or destina
 
 The `ComponentCondition` class "... describes what must be done to complete one `PathwayComponent` (or part thereof) as determined by the issuer of the `Pathway`". An instance of `ComponentCondition` must reference an instance of  `RuleSet` defining the 'algorithm' or process to be applied by the `ComponentCondition` --- e.g., one `RuleSet` might define the constraints on picking a `CourseComponent` from an array of such components while another `RuleSet` might set a level of confidence (or other constraint) that must be met before a `WorkExperienceComponent` satisfies the conditions. 
 
-While a `PathwayComponent` may have more than one `ComponentCondition`, each `ComponentCondition` may be associated with only one `RuleSet`. Initially, we are using a simple, but widely applicable "count rule" ruleset (by Badgr/IMS) that defines the constraints on picking a number of `PathwayComponent` instances that is less than or equal to an enumerated array of such component instances. Development of more complex `RuleSets` will occur as experience requires. 
+While a `PathwayComponent` may have more than one `ComponentCondition`, each `ComponentCondition` may be associated with only one `RuleSet`. Initially, we are using an extension of a simple, but widely applicable "count rule" ruleset (by Badgr/IMS CLR) that defines the constraints on picking a number of `PathwayComponent` instances that is less than or equal to an enumerated array of such components. We have extended the count rule here to also include being able to set a minimum and maximum of required components to be selected from the array (e.g., a minimum of 3 and a maximum of 5 out of those available).  Development of more complex `RuleSets` will occur as experience requires. 
 
 The following JSON-LD example code snippet illustrates an instance of `CourseComponent` with a `ComponentCondition` that uses the "count rule" to pick one `PathwayComponent` from an array of two such candidate (target) components. Note that the `RuleSet` has been identified by an example URI--uniquely identifying it globally.
 
@@ -183,7 +184,9 @@ The following JSON-LD example code snippet illustrates an instance of `CourseCom
     }
 }
 ```
+#### 4.5 Rule Set and Rule Set Profile
 
+In Section 4, we defined a `RuleSet` as an entity that "identifies the rules by which other PathwayComponent instances may satisfy a `PathwayComponent` objective". The `RuleSetProfile` identifies the particular `RuleSet` used by the `ComponentCondition` and resolves any variables in the rules to reflect the circumstances of a *particular* `ComponentCondition`. For example, with the "count rule", you are required to indicate the required number from an array of `PathwayComponents` that satisfy the rule. It is in the `RuleSetProfile` that the number satisfyting the rule is declared. 
 
 ### 5. Term Definitions
 
