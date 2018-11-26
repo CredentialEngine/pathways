@@ -75,7 +75,7 @@ However, a *Pathway Expression* may describe more complex circumstances such as 
 
 The CE pathways conceptual module is comprised of five classes: `Agent`, `Pathway`, `PathwayComponent`, `ComponentCondition` and `RuleSet`. These classes and the primary relationships between them are illustrated below.
 
-![2018-11-10 pathway trial](https://user-images.githubusercontent.com/2939046/48304734-2aaccc00-e4d3-11e8-98a8-f81257411a26.png)
+![2018-11-26 pathway trial](https://user-images.githubusercontent.com/2939046/49047753-4f6c9900-f18d-11e8-88a6-4dbfe32998d1.png)
 
 Each class is defined as follows:
 
