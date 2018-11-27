@@ -12,13 +12,17 @@
 	* [Component Condition](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#44-component-condition)
 	* [Rule Set and Rule Set Profile](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#45-rule-set-and-rule-set-profile)
 * [Term Definitions](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#5-term-definitions)
+* Pathways Work Group Members
 * [Example Encodings](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#6-example-encodings)
 * [Submit Comments](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#7-submit-comments)
+* Pathways Work Group Members
  
   
-### 1. Introduction 
+### 1. Introduction
+
+In this *Pathway Overview*, we outline the current *Pathway Work Group* (PWG) proposal for a new CTDL Pathway specification. We will be in the consensus period for the propsal between the 2018 November 30 joint meeting of the PWG and the TAG and the presentations and discussion of the propsal with the other CE advisory groups on 10 January 2019. Input into the process has been significant through the engagement of the We anticipate that there will be additional refinements during the consensus period due to the additional input. If you have any comments regarding this *Consensus Draft* 
   
-###  2. Definition
+###  2. Definitions
 
 #### 2.1 Pathway
 
@@ -201,11 +205,43 @@ The CE Pathway's domain model is currently comprised of the following:
 
 A complete listing of the defined properties and classes (terms) including their definitions can be found at [Pathway Terms](https://github.com/CredentialEngine/vocabularies/issues/546). 
 
-### 6. Example Encodings
+### 6. Pathways Work Group Members
+
+* Jeff Bohrer, IMS Global Learning Consortium
+* Amie Bloomfield, NOCTI and Nocti Business Solutions
+* Carla Casilli, LA Counts
+* Caryn Chaden, DePaul University
+* Deb Everheart,	Cengage
+* John Foster, NOCTI
+* Jonathan Furr, Education Systems Center at NIU
+* Bill Guest, Metrics Reporting, Inc.
+* Amy Heitzman, UPCEA
+* Joshua Hester, ITCC/Kaplan Professional
+* Lesley Hirsch, New Jersey Department of Labor and Workforce Development
+* Laurel Hogue, University of Central Missouri
+* Chris Houston, Capella University/IMS
+* Shawn Hulsizer, CAEL
+* Alexander Jackl, Bardic Systems, Inc.
+* Mark Leuba, IMS Global Learning Consortium
+* Ronald Mitchell Virgil Careers
+* Jane Oates, Working Nation
+* Nate Otto, Concentric Sky
+* Rodney Parks, Elon University
+* David Ramsay, New Jersey Department of Labor and Workforce Development
+* Fritz Ray, Eduworks
+* Art Recesso, University System of Georgia
+* Alma Salazar, Los Angeles Area Chamber of Commerce
+* Samantha Sanders, Career and Technical Education
+* Gregory Sedrick, Tennessee Board of Regents
+* Mary Anne Sheahan, Vermont Talent Pipeline / Vermont Business Roundtable
+* Bob Sheets, GWU Institute of Public Policy
+* Roy Swift, workcred
+
+### 7. Example Encodings
 
 A full JSON-LD encoding of the Bakersfield College pathway used above can be [found here](https://github.com/CredentialEngine/vocabularies/blob/master/Pathway-Examples/Bakersfield_AS_CS_pathway-CSU_transfer.json).
 
-### 7. Submit Comments
+### 8. Submit Comments
 
 Comments on this proposal can be made through either the [Technical Advisory Group (TAG) Google Group forum](https://groups.google.com/forum/?fromgroups#!forum/credentialenginetech), or the [Pathway Working Group (DWG) Google Group forum](https://groups.google.com/a/credentialengine.org/forum/#!forum/credential-engine-pathways-work-group).
 
