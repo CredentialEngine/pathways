@@ -188,7 +188,7 @@ The following JSON-LD example code snippet illustrates an instance of `CourseCom
 ```
 #### 4.5 Rule Set and Rule Set Profile
 
-In Section 4, we defined a `RuleSet` as an entity that "identifies the rules by which other PathwayComponent instances may satisfy a `PathwayComponent` objective". The `RuleSetProfile` identifies the particular `RuleSet` used by the `ComponentCondition` and resolves any variables in the rules to reflect the circumstances of a *particular* `ComponentCondition`. For example, with the "count rule", you are required to indicate the required number from an array of `PathwayComponents` that satisfy the rule. It is in the `RuleSetProfile` that the number satisfyting the rule is declared. 
+In Section 4, we defined a `RuleSet` as an entity that "identifies the rules by which other PathwayComponent instances may satisfy a `PathwayComponent` objective". The `RuleSetProfile` identifies the particular `RuleSet` used by the `ComponentCondition` and resolves any variables in the rules to reflect the circumstances of a *particular* `ComponentCondition`. For example, with the "count rule"--defined in a `RuleSet`, you may be required to indicate the number `PathwayComponents` to select from an array of `PathwayComponents` that satisfies the rule. It is in the `RuleSetProfile` that the number satisfyting the rule is declared. 
 
 ### 5. Term Definitions
 
