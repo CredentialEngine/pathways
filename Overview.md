@@ -18,7 +18,7 @@
   
 ### 1. Introduction
 
-In this *Pathway Overview*, we outline the current *Pathway Work Group* (PWG) proposal for a new CTDL Pathway specification. We will be in the consensus period for the propsal between the 2018 November 30 joint meeting of the PWG and the TAG and the presentations and discussion of the propsal with the other CE advisory groups on 10 January 2019. Input into the process has been significant through the engagement of the We anticipate that there will be additional refinements during the consensus period due to the additional input. If you have any comments regarding this *Consensus Draft* 
+In this *Pathway Overview*, we outline the current *Pathway Work Group* (PWG) proposal for a new CTDL Pathway specification. We will be in the consensus period for the propsal between the 2018 November 30 joint meeting of the PWG and the TAG and the presentations and discussion of the propsal with the other CE advisory groups on 10 January 2019. Input into the process has been significant through the engagement of the We anticipate that there will be additional refinements during the consensus period due to the additional input. If you have any comments regarding this *Consensus Draft*, please see Section 8. Submit Comments for links to the PWG and TAG discussion forums.
   
 ###  2. Definitions
 
@@ -174,7 +174,7 @@ The following JSON-LD example code snippet illustrates an instance of `CourseCom
        "@type": "ComponentCondition",
        "description": "Selection of one course from PHIL B9 or ENGL B28",
        "hasRuleSet": {
-           "@type": "RuleSet",
+           "@type": "RuleSetProfile",
            "ruleSetType": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b",
            "countRuleType": "https://credentialengineregistry.org/ruleSets/IMS-83f05f51-618b-44f3-806c-066365254a8b/RequiredNumber",
            "requiredNumber": 1
