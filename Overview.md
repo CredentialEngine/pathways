@@ -12,11 +12,9 @@
 	* [Component Condition](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#44-component-condition)
 	* [Rule Set and Rule Set Profile](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#45-rule-set-and-rule-set-profile)
 * [Term Definitions](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#5-term-definitions)
-* Pathways Work Group Members
+* [Pathways Work Group Members](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#6-pathways-work-group-members)
 * [Example Encodings](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#6-example-encodings)
 * [Submit Comments](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#7-submit-comments)
-* Pathways Work Group Members
- 
   
 ### 1. Introduction
 
