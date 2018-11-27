@@ -76,7 +76,7 @@ However, a *Pathway Expression* may describe more complex circumstances such as 
   
 ### 4. Conceptual Model
 
-The CE pathways conceptual module is comprised of five classes: `Agent`, `Pathway`, `PathwayComponent`, `ComponentCondition` and `RuleSet`. These classes and the primary relationships between them are illustrated below.
+The CE pathways conceptual module is comprised of six classes: `Agent`, `Pathway`, `PathwayComponent`, `ComponentCondition`, `RuleSetProfile` and `RuleSet`. These classes and the primary relationships between them are illustrated below.
 
 ![2018-11-26 pathway trial](https://user-images.githubusercontent.com/2939046/49047753-4f6c9900-f18d-11e8-88a6-4dbfe32998d1.png)
 
@@ -89,6 +89,7 @@ Each class is defined as follows:
 |PathwayComponent|A PathwayComponent describes an objective and its completion requirements through reference to one or more instances of ComponentCondition.|
 |ComponentCondition|Entity that describes what must be done to complete one PathwayComponent [or part thereof] as determined by the issuer of the Pathway. A ComponentCondition references a single RuleSet entity with values ascertained through application of that RuleSet.|
 |RuleSet|Entity that identifies the rules by which other PathwayComponent instances satisfy a PathwayComponent objective. In order to meet varying circumstances, there will likely be more than one recognized RuleSet.|
+|RuleSetProfile|Entity defining the application of a RuleSet to a particular ComponentCondition.|
 
 For the remainder of this *Overview*, we'll illustrate each class of entity using snippets of JSON-LD encoding of a pathway description based on the image below of a transfer pathway for an Associate of Science Degree in Computer Science from Bakersfield College to the California State University. The pathway moves from left to right covering the four terms of a 2-year community college program. The upper half of the image represents the "core" cources for the degree. The horizontal lines between courses represents the course prerequisite linking structure. 
 
