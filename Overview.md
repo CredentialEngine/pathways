@@ -190,7 +190,7 @@ The following JSON-LD example code snippet illustrates an instance of `CourseCom
 ```
 #### 4.5 Rule Set and Rule Set Profile
 
-In Section 4, we defined a `RuleSet` as an entity that "identifies the rules by which other PathwayComponent instances may satisfy a `PathwayComponent` objective". A `RuleSetProfile` identifies the particular `RuleSet` used by the `ComponentCondition` in the example above and resolves any variables in the rules to reflect the circumstances of the `ComponentCondition`. For example, with the "count rule"--defined in a `RuleSet`, you may be required to indicate the number of `PathwayComponents` to select from an array of `PathwayComponents` that satisfies the rule. It is in the `RuleSetProfile` that the number satisfyting the rule is declared.
+In *Section 4 above*, we defined a `RuleSet` as an entity that "identifies the rules by which other PathwayComponent instances may satisfy a `PathwayComponent` objective". A `RuleSetProfile` identifies the particular `RuleSet` used by the `ComponentCondition` in the example above and resolves any variables in the rules to reflect the circumstances of the `ComponentCondition`. For example, with the "count rule"--defined in a `RuleSet`, you may be required to indicate the number of `PathwayComponents` to select from an array of `PathwayComponents` that satisfies the rule. It is in the `RuleSetProfile` that the number satisfying the rule is declared.
 
 ***Example/Potential Rule Sets***
 
@@ -201,7 +201,7 @@ Choose a specific number of PathwayComponents ≦ the number of PathwayComponent
 
 **2. Boolean Rule:**
 ```
-       (PathwayComponent-A OR (PathwayComponent-B AND PathwayComponent-C) 
+       ((PathwayComponent-A OR (PathwayComponent-B AND PathwayComponent-C)) 
    AND 
        (PathwayComponent-D OR PathwayComponent-E))
 ```
