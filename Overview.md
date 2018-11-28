@@ -186,6 +186,7 @@ The following JSON-LD example code snippet illustrates an instance of `CourseCom
        ]
     }
 }
+
 ```
 #### 4.5 Rule Set and Rule Set Profile
 
@@ -196,7 +197,7 @@ In Section 4, we defined a `RuleSet` as an entity that "identifies the rules by 
 
 **1. Count Rule:** 
 
-Choose a specific number of PathwayComponents ≦ the number of PathwayComponent choices in an array. A slightly more complex rule might require choosing a minimum and maximum number of PathwayComponents---e.g., with a CourseComponent, a minimum and maximum number of PathwayComponents or PathwayComponents totaling a specific number of credit hours.
+Choose a specific number of PathwayComponents ≦ the number of PathwayComponent choices in an array. A slightly more complex rule might require choosing a minimum and maximum number of PathwayComponents---e.g., with a CourseComponent, a minimum and maximum number of PathwayComponents or a number of PathwayComponents totaling a specific number of credit hours.
 
 **2. Boolean Rule:**
 ```
