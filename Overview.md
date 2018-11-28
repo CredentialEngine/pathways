@@ -100,7 +100,7 @@ The bottom half of the figure represents general education courses. Unlike the t
 
 #### 4.1 Agent
 
-The Pathway's model does not define any properties for the `Agent` class and assumes that appropriate agents defined within relevant contexts will be referenced from the `Pathway` entity as `ownerBy` the `Pathway`. For example, an instance of the CTDL `CredentialOrganization` class could use an `ctdl:owns` property to reference one of its pathways. In like fashion, that `Pathway` instance could reference its owner via `ctdl:ownedBy`--as illustrated in the JSON-LD code snippet in the following section.
+The Pathway's model does not define any properties for the `Agent` class and assumes that appropriate agents defined within relevant contexts will be referenced from the `Pathway` entity as `ownerBy` the `Pathway`. For example, an instance of the CTDL `CredentialOrganization` class could use a `ctdl:owns` property to reference one of its pathways. In like fashion, that `Pathway` instance could reference its owner via `ctdl:ownedBy`--as illustrated in the JSON-LD code snippet in the following section.
 
 #### 4.2 Pathway
 
@@ -136,7 +136,7 @@ The `PathwayComponent` class is a superclass identifying a family of subclasses 
 
 While all of the subclasses share basic descriptive properties, each has additional properties particular to the subclass. While a basic set of properties are set out in the [Pathway Terms](https://github.com/CredentialEngine/vocabularies/issues/546) document, additional properties will be added as experience is gained describing existing pathways.  
 
-Relationships between `PathwayComponents` in a `Pathway` are of two types: (1) simple binary relationships expressed as simple assertions in RDF---e.g., `PathwayComponent`===`prerequisite`===>`PathwayComponent`; and (2) complex relationships expressed through use of the `ComponentCondition` class (see section 4.4)--e.g., where the required condition is to pick a specified number of `PathwayComponents` from an array of available choices.
+Relationships between `PathwayComponents` in a `Pathway` are of two types: (1) simple binary relationships expressed as simple assertions in RDF---e.g., `PathwayComponent`===`prerequisite`===>`PathwayComponent`; and (2) complex relationships expressed through use of the `ComponentCondition` class (see [Section 4.4](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#44-component-condition))--e.g., where the required condition is to pick a specified number of `PathwayComponents` from an array of available choices.
 
 The following JSON-LD code snippet illustrates a `PathwayComponent` of the subclass `CourseComponent` for the course "Programming Concepts and Methology II" with a simple `prerequisite` assertion.
 
