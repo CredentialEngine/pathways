@@ -154,7 +154,7 @@ The following JSON-LD code snippet illustrates a `PathwayComponent` of the subcl
 }
 ```
 
-A *Pathway Expression* may or may not define a single point of origin or destination `PathwayComponent`. The latter may occur where the `Pathway` defines an aggregation of logically related *Pathways* defining alternative path choices that are bound together in a single *pathway expression*. 
+A *Pathway Expression* may or may not define a single point of origin or destination `PathwayComponent`. The latter may occur where the pathway defines an aggregation of logically related *Pathways* defining alternative path choices that are bound together in a single *pathway expression*. 
 
 #### 4.4 Component Condition
 
@@ -190,14 +190,14 @@ The following JSON-LD example code snippet illustrates an instance of `CourseCom
 ```
 #### 4.5 Rule Set and Rule Set Profile
 
-In *Section 4 above*, we defined a `RuleSet` as an entity that "identifies the rules by which other PathwayComponent instances may satisfy a `PathwayComponent` objective". A `RuleSetProfile` identifies the particular `RuleSet` used by the `ComponentCondition` in the example above and resolves any variables in the rules to reflect the circumstances of the `ComponentCondition`. For example, with the "count rule"--defined in a `RuleSet`, you may be required to indicate the number of `PathwayComponents` to select from an array of `PathwayComponents` that satisfies the rule. It is in the `RuleSetProfile` that the number satisfying the rule is declared.
+In Section 4 above, we defined a `RuleSet` as an entity that "identifies the rules by which other PathwayComponent instances may satisfy a `PathwayComponent` objective". A `RuleSetProfile` identifies the particular `RuleSet` used by the `ComponentCondition` in the example above and resolves any variables in the rules to reflect the circumstances of the `ComponentCondition`. For example, with the "count rule"--defined in a `RuleSet`, you may be required to indicate the number of `PathwayComponents` to select from an array of `PathwayComponents` that satisfies the rule. It is in the `RuleSetProfile` that the number satisfying the rule is declared.
 
 ***Example/Potential Rule Sets***
 
 
 **1. Count Rule:** 
 
-Choose a specific number of PathwayComponents ≦ the number of PathwayComponent choices in an array. A slightly more complex rule might require choosing a minimum and maximum number of PathwayComponents---e.g., with a CourseComponent, a minimum and maximum number of PathwayComponents or a number of PathwayComponents totaling a specific number of credit hours.
+Choose a specific number of `PathwayComponents` ≦ the number of `PathwayComponent` choices in an array. A slightly more complex rule might require choosing a minimum and maximum number of `PathwayComponents`---e.g., with a `CourseComponent`, a minimum and maximum number of `PathwayComponents` or a number of `PathwayComponents` totaling a specific number of credit hours.
 
 **2. Boolean Rule:**
 ```
