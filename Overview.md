@@ -18,7 +18,7 @@
   
 ### 1. Introduction
 
-In this *Pathway Overview*, we outline the current *Pathway Work Group* (PWG) proposal for a new CTDL Pathway specification. We will be in the consensus period for the propsal between the 2018 November 30 joint meeting of the PWG and the TAG and the presentations and discussion of the propsal with the other CE advisory groups on 10 January 2019. Input into the process has been significant through the engagement of the We anticipate that there will be additional refinements during the consensus period due to the additional input. If you have any comments regarding this *Consensus Draft*, please see Section 8. Submit Comments for links to the PWG and TAG discussion forums.
+In this *Pathway Overview*, we outline the current *Pathway Work Group* (PWG) proposal for a new CTDL Pathway specification. We will be in the consensus period for the propsal between the 2018 November 30 joint meeting of the PWG and the TAG and the presentations and discussion of the propsal with the other CE advisory groups on 10 January 2019. We anticipate that there will be additional refinements during the consensus period due to the additional input. PWG and TAG members wanting to comment on the propsal should see [*Section 8. Submit Comments*](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#7-submit-comments) for links to the PWG and TAG discussion forums.
   
 ###  2. Definitions
 
@@ -53,11 +53,11 @@ Since the goal of the CE pathway work is to enable the representation of pathway
 
 A *Pathway Expression* is an informal notion of a machine actionable encoding of either a single *Pathway* or an aggregation of logically related *Pathways* defining alternative paths that are bound together in a single expression. 
 
-As defined, the basic building blocks of a *Pathway* form a simple (RDF) directed graph as illustrated by the following figure where we see a *Pathway* pointing to a *Pathway Component* identified as the destination milestone or root node of the pathway (e.g., a bachelor degree in nursing) and a set of preceding *Pathway Components* defining earlier milestones back to an origin (e.g., a high school diploma).
+As defined, the basic building blocks of a *Pathway* form a (RDF) directed graph as illustrated by the following figure where we see a *Pathway* pointing to a *Pathway Component* identified as the destination milestone or root node of the pathway (e.g., a bachelor degree in nursing) and a set of preceding *Pathway Components* defining earlier milestones back to an origin (e.g., a high school diploma).
 
 ![simple_directed_graph](https://user-images.githubusercontent.com/2939046/48304790-89bf1080-e4d4-11e8-9c3b-2a5ae24093ae.png)
 
-However, a *Pathway Expression* may describe more complex circumstances such as alternative paths to the same destination, or a destination may be more diverse---e.g., a career cluster or a more general destination such as programming and software development (see, Illinois Pathways example below).  The following figure illustrates a pathway modeling of alternative paths to the same destination.
+However, a *Pathway Expression* may describe more complex circumstances such as alternative paths to the same destination, or a destination may be more diverse---e.g., a career cluster or a more general destination such as programming and software development.  The following figure illustrates a pathway modeling of alternative paths to the same destination.
 
 ![alternatives_directed_graph](https://user-images.githubusercontent.com/2939046/48304822-27b2db00-e4d5-11e8-89a2-dac028bfe86a.png)
 
