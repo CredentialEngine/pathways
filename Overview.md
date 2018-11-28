@@ -18,7 +18,7 @@
   
 ### 1. Introduction
 
-In this *Pathway Overview*, we outline the current *Pathway Work Group* (PWG) proposal for a new CTDL Pathway specification. We will be in the consensus period for the propsal between the 2018 November 30 joint meeting of the PWG and the TAG and the presentations and discussion of the propsal with the other CE advisory groups on 10 January 2019. We anticipate that there will be additional refinements during the consensus period due to the additional input. PWG and TAG members wanting to comment on the propsal should see [*Section 8. Submit Comments*](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#7-submit-comments) for links to the PWG and TAG discussion forums.
+In this *Pathway Overview*, we outline the current *Pathway Work Group* (PWG) proposal for a new CTDL Pathway specification. We will be in the consensus period for the proposal between the 2018 November 30 joint meeting of the PWG and the TAG and the presentations and discussion of the propsal with the other CE advisory groups on 10 January 2019. We anticipate that there will be additional refinements during the consensus period due to the additional input. PWG and TAG members wanting to comment on the propsal should see [*Section 8. Submit Comments*](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#7-submit-comments) for links to the PWG and TAG discussion forums.
   
 ###  2. Definitions
 
@@ -43,7 +43,7 @@ The pathway's ecosystem is generally comprised of two broad classes:
 1. **Individual Learner Pathway (ILP).** Pathways describing points along the personal journey a learner is pursuing or has pursued; and
 2. **Organizational Pathway (OP),** Pathways describing points along a prescribed or recommended route as defined by organizations, collaborations or institutions.
 
-Credential Engine's focus is on the definition and description of OPs and not ILPs. While out of scope of the PWG, the importance of ILPs to OPs should not be underestimated or the need for close collaboration between developers of OP and ILP data models undervalued. A robust and dynamic pathways ecosystems will likely depend on ILP data, along with evolving workforce needs, to inform development of OPs. Thus, collaboration between the work of the PWG and other groups (e.g., IMS [Comprehensive Learner Record Work Group](https://www.imsglobal.org/activity/comprehensive-learner-record) is to make sure CE maximizes the potential for each class of pathway to inform and support the other.
+Credential Engine's focus is on the definition and description of OPs and not ILPs. While out of scope of the PWG, the importance of ILPs to OPs should not be underestimated or the need for close collaboration between developers of OP and ILP data models undervalued. A robust and dynamic pathways ecosystems will likely depend on ILP data, along with evolving workforce needs, to inform development of OPs. Thus, collaboration between the work of the PWG and other groups (e.g., {IMS' Comprehensive Learner Record Work Group](https://www.imsglobal.org/activity/comprehensive-learner-record) is to make sure CE maximizes the potential for each class of pathway to inform and support the other.
 
 Since the goal of the CE pathway work is to enable the representation of pathways developed by a broad array of  organizations for an equally broad array of OP purposes, the following are out of scope for the CE PWG work: 
 1. Determining what constitutes a best practice for designing pathways.
@@ -53,7 +53,7 @@ Since the goal of the CE pathway work is to enable the representation of pathway
 
 A *Pathway Expression* is an informal notion of a machine actionable encoding of either a single *Pathway* or an aggregation of logically related *Pathways* defining alternative paths that are bound together in a single expression. 
 
-As defined, the basic building blocks of a *Pathway* form a (RDF) directed graph as illustrated by the following figure where we see a *Pathway* pointing to a *Pathway Component* identified as the destination milestone or root node of the pathway (e.g., a bachelor degree in nursing) and a set of preceding *Pathway Components* defining earlier milestones back to an origin (e.g., a high school diploma).
+As defined, the basic building blocks of a *Pathway* form an (RDF) directed graph as illustrated by the following figure where we see a *Pathway* pointing to a *Pathway Component* identified as the destination milestone or root node of the pathway (e.g., a bachelor degree in nursing) and a set of preceding *Pathway Components* defining earlier milestones back to an origin (e.g., a high school diploma).
 
 ![simple_directed_graph](https://user-images.githubusercontent.com/2939046/48304790-89bf1080-e4d4-11e8-9c3b-2a5ae24093ae.png)
 
@@ -189,7 +189,27 @@ The following JSON-LD example code snippet illustrates an instance of `CourseCom
 ```
 #### 4.5 Rule Set and Rule Set Profile
 
-In Section 4, we defined a `RuleSet` as an entity that "identifies the rules by which other PathwayComponent instances may satisfy a `PathwayComponent` objective". The `RuleSetProfile` identifies the particular `RuleSet` used by the `ComponentCondition` and resolves any variables in the rules to reflect the circumstances of a *particular* `ComponentCondition`. For example, with the "count rule"--defined in a `RuleSet`, you may be required to indicate the number `PathwayComponents` to select from an array of `PathwayComponents` that satisfies the rule. It is in the `RuleSetProfile` that the number satisfyting the rule is declared. 
+In Section 4, we defined a `RuleSet` as an entity that "identifies the rules by which other PathwayComponent instances may satisfy a `PathwayComponent` objective". A `RuleSetProfile` identifies the particular `RuleSet` used by the `ComponentCondition` in the example above and resolves any variables in the rules to reflect the circumstances of the `ComponentCondition`. For example, with the "count rule"--defined in a `RuleSet`, you may be required to indicate the number `PathwayComponents` to select from an array of `PathwayComponents` that satisfies the rule. It is in the `RuleSetProfile` that the number satisfyting the rule is declared.
+
+**Example/Potential Rule Sets**
+
+
+**1. Count Rule:** 
+
+Choose specific number of PathwayComponents ≦ number of PathwayComponent choices in an array. A slightly more complex rule might require choosing a minimum and maximum number of PathwayComponents; or, with a CourseComponent, a minimum and maximum number of credit hours.
+
+**2. Boolean Rule:**
+```
+        (PathwayComponent-A OR (PathwayComponent-B AND PathwayComponent-C) 
+   AND 
+       (PathwayComponent-D OR PathwayComponent-E))
+```
+**3. Weighted/Boolean Rule:**
+```
+       ([PathwayComponent-A AND confidence: >0.6] AND [PathwayComponent-B AND confidence:>0.6])
+   OR
+       ([PathwayComponent-C AND confidence:>0.9] OR ( [PathwayComponent-D] AND [PathwayComponent-C])
+```       
 
 ### 5. Term Definitions
 
