@@ -1,7 +1,7 @@
 # Pathway Overview
 ### Table of Contents  
 * [Introduction](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#1-introduction)
-* [Definition and Scope](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#2-definitions-and-scope)
+* [Definitions and Scope](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#2-definitions-and-scope)
 	* [Pathway](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#21-pathway)
 	* [Pathway Expression](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#22-pathway-expression)
 * [Use Cases](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#3-use-cases)
