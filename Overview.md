@@ -20,7 +20,7 @@
 
 In this *Pathway Overview*, we outline the current *Pathway Work Group* (PWG) proposal for a new CTDL Pathway specification. We will be in the consensus period for the proposal between the 2018 November 30 joint meeting of the PWG and the TAG and the presentations and discussion of the propsal with the other CE advisory groups on 10 January 2019. We anticipate that there will be additional refinements during the consensus period due to the additional input. PWG and TAG members wanting to comment on the propsal should see [*Section 8. Submit Comments*](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#8-submit-comments) for links to the PWG and TAG discussion forums.
   
-###  2. Definitions
+###  2. Definitions and Scope
 
 #### 2.1 Pathway
 
