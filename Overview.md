@@ -1,11 +1,11 @@
 # Pathway Overview
 ### Table of Contents  
 * [Introduction](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#1-introduction)
-* [Definition and Scope](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#2-definition)
+* [Definition and Scope](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#2-definitions)
 	* [Pathway](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#21-pathway)
 	* [Pathway Expression](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#22-pathway-expression)
 * [Use Cases](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#3-use-cases)
-* [Domain Model](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#4-domain-model) 
+* [Conceptual Model](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#4-conceptual-model) 
 	* [Agent](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#41-agent)
 	* [Pathway](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#42-pathway)
 	* [Pathway Component](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#43-pathway-component)
@@ -13,12 +13,12 @@
 	* [Rule Set and Rule Set Profile](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#45-rule-set-and-rule-set-profile)
 * [Term Definitions](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#5-term-definitions)
 * [Pathways Work Group Members](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#6-pathways-work-group-members)
-* [Example Encodings](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#6-example-encodings)
-* [Submit Comments](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#7-submit-comments)
+* [Example Encodings](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#7-example-encodings)
+* [Submit Comments](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#8-submit-comments)
   
 ### 1. Introduction
 
-In this *Pathway Overview*, we outline the current *Pathway Work Group* (PWG) proposal for a new CTDL Pathway specification. We will be in the consensus period for the proposal between the 2018 November 30 joint meeting of the PWG and the TAG and the presentations and discussion of the propsal with the other CE advisory groups on 10 January 2019. We anticipate that there will be additional refinements during the consensus period due to the additional input. PWG and TAG members wanting to comment on the propsal should see [*Section 8. Submit Comments*](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#7-submit-comments) for links to the PWG and TAG discussion forums.
+In this *Pathway Overview*, we outline the current *Pathway Work Group* (PWG) proposal for a new CTDL Pathway specification. We will be in the consensus period for the proposal between the 2018 November 30 joint meeting of the PWG and the TAG and the presentations and discussion of the propsal with the other CE advisory groups on 10 January 2019. We anticipate that there will be additional refinements during the consensus period due to the additional input. PWG and TAG members wanting to comment on the propsal should see [*Section 8. Submit Comments*](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#8-submit-comments) for links to the PWG and TAG discussion forums.
   
 ###  2. Definitions
 
@@ -191,16 +191,16 @@ The following JSON-LD example code snippet illustrates an instance of `CourseCom
 
 In Section 4, we defined a `RuleSet` as an entity that "identifies the rules by which other PathwayComponent instances may satisfy a `PathwayComponent` objective". A `RuleSetProfile` identifies the particular `RuleSet` used by the `ComponentCondition` in the example above and resolves any variables in the rules to reflect the circumstances of the `ComponentCondition`. For example, with the "count rule"--defined in a `RuleSet`, you may be required to indicate the number `PathwayComponents` to select from an array of `PathwayComponents` that satisfies the rule. It is in the `RuleSetProfile` that the number satisfyting the rule is declared.
 
-**Example/Potential Rule Sets**
+***Example/Potential Rule Sets***
 
 
 **1. Count Rule:** 
 
-Choose specific number of PathwayComponents ≦ number of PathwayComponent choices in an array. A slightly more complex rule might require choosing a minimum and maximum number of PathwayComponents; or, with a CourseComponent, a minimum and maximum number of credit hours.
+Choose a specific number of PathwayComponents ≦ number of PathwayComponent choices in an array. A slightly more complex rule might require choosing a minimum and maximum number of PathwayComponents; or, with a CourseComponent, a minimum and maximum number of credit hours.
 
 **2. Boolean Rule:**
 ```
-        (PathwayComponent-A OR (PathwayComponent-B AND PathwayComponent-C) 
+       (PathwayComponent-A OR (PathwayComponent-B AND PathwayComponent-C) 
    AND 
        (PathwayComponent-D OR PathwayComponent-E))
 ```
