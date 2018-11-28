@@ -84,16 +84,16 @@ Each class is defined as follows:
 
 | Class       | Description   |
 | ------------- |-------------|
-|Agent|Organization or person that acts or has the power to act.Entity that serves as a defined point along the route of a Pathway.|
+|Agent|Organization or person that acts or has the power to act.|
 |Pathway|Entity comprised of structured sets of objectives and qualifying conditions defining points along a route to fulfillment of a job, occupation or career. Pathway entity represents a pathway as a whole and frequently includes a reference to an instance of PathwayComponent that serves as the root or destination node of the pathway.|
-|PathwayComponent|A PathwayComponent describes an objective and its completion requirements through reference to one or more instances of ComponentCondition.|
+|PathwayComponent|A PathwayComponent describes an objective and its completion requirements through reference to one or more instances of ComponentCondition. Entity serves as a defined point along the route of a Pathway.|
 |ComponentCondition|Entity that describes what must be done to complete one PathwayComponent [or part thereof] as determined by the issuer of the Pathway. A ComponentCondition references a single RuleSet entity with values ascertained through application of that RuleSet.|
 |RuleSet|Entity that identifies the rules by which other PathwayComponent instances satisfy a PathwayComponent objective. In order to meet varying circumstances, there will likely be more than one recognized RuleSet. While the CE defines the RuleSet as a class, it is assumed that as rule sets emerge, they will likely be defined in a number of non-CE namespaces.|
 |RuleSetProfile|Entity defining the application of a RuleSet to a particular ComponentCondition.|
 
-For the remainder of this *Overview*, we'll illustrate each class of entity using snippets of JSON-LD encoding of a pathway description based on the image below of a transfer pathway for an Associate of Science Degree in Computer Science from Bakersfield College to the California State University. The pathway moves from left to right covering the four terms of a 2-year community college program. The upper half of the image represents the "core" cources for the degree. The horizontal lines between courses represents the course prerequisite linking structure. 
+For the remainder of this *Overview*, we'll illustrate each class of entity using snippets of JSON-LD encoding of a pathway description based on the image below of a transfer pathway for an Associate of Science Degree in Computer Science from Bakersfield College to the California State University. The pathway moves from left to right covering the four terms of a 2-year community college program. The upper half of the image represents the "core" courses for the degree. The horizontal lines between courses represents the course prerequisite linking structure. 
 
-The bottom half of the figure represents general education courses. Unlike the top half, there is no apparent prerequisite structure. Note that the bottom right node in the figure presents a set of alternative history and philosophy courses from which a student is expected to pick one. Note that several other general education components also present such an alternative. We'll address how these kinds of choices are handled below in the section on the model's `ComponentCondition`.
+The bottom half of the figure represents general education courses. Unlike the top half, there is no apparent prerequisite structure. Note that the bottom right node in the figure presents a set of alternative history and philosophy courses from which a student is expected to pick one. Note that several other general education components also present such alternatives. We'll address how these kinds of choices are handled below in the [*Section 4.4*](https://github.com/CredentialEngine/pathways/blob/master/Overview.md#44-component-condition).
 
 <img width="750" alt="ccc bakersfield-1" src="https://user-images.githubusercontent.com/2939046/47951186-7cc18080-df1a-11e8-8cad-7136a9b3bee0.png">
 
