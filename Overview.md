@@ -189,14 +189,14 @@ The following JSON-LD example code snippet illustrates an instance of `CourseCom
 ```
 #### 4.5 Rule Set and Rule Set Profile
 
-In Section 4, we defined a `RuleSet` as an entity that "identifies the rules by which other PathwayComponent instances may satisfy a `PathwayComponent` objective". A `RuleSetProfile` identifies the particular `RuleSet` used by the `ComponentCondition` in the example above and resolves any variables in the rules to reflect the circumstances of the `ComponentCondition`. For example, with the "count rule"--defined in a `RuleSet`, you may be required to indicate the number `PathwayComponents` to select from an array of `PathwayComponents` that satisfies the rule. It is in the `RuleSetProfile` that the number satisfyting the rule is declared.
+In Section 4, we defined a `RuleSet` as an entity that "identifies the rules by which other PathwayComponent instances may satisfy a `PathwayComponent` objective". A `RuleSetProfile` identifies the particular `RuleSet` used by the `ComponentCondition` in the example above and resolves any variables in the rules to reflect the circumstances of the `ComponentCondition`. For example, with the "count rule"--defined in a `RuleSet`, you may be required to indicate the number of `PathwayComponents` to select from an array of `PathwayComponents` that satisfies the rule. It is in the `RuleSetProfile` that the number satisfyting the rule is declared.
 
 ***Example/Potential Rule Sets***
 
 
 **1. Count Rule:** 
 
-Choose a specific number of PathwayComponents ≦ number of PathwayComponent choices in an array. A slightly more complex rule might require choosing a minimum and maximum number of PathwayComponents; or, with a CourseComponent, a minimum and maximum number of credit hours.
+Choose a specific number of PathwayComponents ≦ number of PathwayComponent choices in an array. A slightly more complex rule might require choosing a minimum and maximum number of PathwayComponents---e.g., with a CourseComponent, a minimum and maximum number PathwayComponents totaling a specific number of credit hours.
 
 **2. Boolean Rule:**
 ```
