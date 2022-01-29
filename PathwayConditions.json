@@ -15,9 +15,9 @@
             ]
         },
         {
-            "id": "http://example.edu/http://example.edu/b5107f1f-07a3-49fc-827f-14ccc318dcdf" ,
+            "id": "http://example.edu/b5107f1f-07a3-49fc-827f-14ccc318dcdf" ,
             "type": "CredentialComponent" ,
-            "hasChild": "http://example.edu/http://example.edu/ec05c0e5-3215-4707-a58e-2123d35ffd38" ,
+            "hasChild": "http://example.edu/ec05c0e5-3215-4707-a58e-2123d35ffd38" ,
             "hasCondition": {
                 "@id": "_:2ef04702-4456-480d-b77a-78eb59b5fa95" ,
                 "type": "ComponentCondition" ,
@@ -25,11 +25,11 @@
                 "leftOperand": "reqNum" ,
                 "operand": "=" ,
                 "rightOperand": 1 ,
-                "targetComponent": "http://example.edu/http://example.edu/ec05c0e5-3215-4707-a58e-2123d35ffd38"
+                "targetComponent": "http://example.edu/ec05c0e5-3215-4707-a58e-2123d35ffd38"
             }
         },
         {
-            "id": "http://example.edu/http://example.edu/ec05c0e5-3215-4707-a58e-2123d35ffd38" ,
+            "id": "http://example.edu/ec05c0e5-3215-4707-a58e-2123d35ffd38" ,
             "type": "AssessmentComponent",
             "hasChild": [
                 "http://example.edu/2a45a345-8431-4a01-b645-a103d0d40ab" ,
