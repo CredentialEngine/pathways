@@ -1,0 +1,108 @@
+{
+  "@context": "http://credreg.net/ctdl/schema/context/json", 
+  "@graph": [
+        {
+            "id": "http://example.edu/a7f231f4-21cb-4ba3-8c03-4f7a5f67781c" ,
+            "type": "Pathway",
+            "hasDestinationComponent": "http://example.edu/b5107f1f-07a3-49fc-827f-14ccc318dcdf" ,
+            "hasPart": [
+                "http://example.edu/b5107f1f-07a3-49fc-827f-14ccc318dcdf" ,
+                "http://example.edu/ec05c0e5-3215-4707-a58e-2123d35ffd38" ,
+                "http://example.edu/2a45a345-8431-4a01-b645-a103d0d40ab" ,
+                "http://example.edu/e752fe59-4cc3-402a-8c2d-b2cc51e5dee" ,
+                "http://example.edu/051a2f7a-ab1c-491a-8d97-abb4a4d83915" ,
+                "http://example.edu/4fec78ed-f39f-4a63-b495-a15d40583b41"
+            ]
+        },
+        {
+            "id": "http://example.edu/http://example.edu/b5107f1f-07a3-49fc-827f-14ccc318dcdf" ,
+            "type": "CredentialComponent" ,
+            "hasChild": "http://example.edu/http://example.edu/ec05c0e5-3215-4707-a58e-2123d35ffd38" ,
+            "hasCondition": {
+                "@id": "_:2ef04702-4456-480d-b77a-78eb59b5fa95" ,
+                "type": "ComponentCondition" ,
+                "description": {"en-US": "Required"} ,
+                "leftOperand": "reqNum" ,
+                "operand": "=" ,
+                "rightOperand": 1 ,
+                "targetComponent": "http://example.edu/http://example.edu/ec05c0e5-3215-4707-a58e-2123d35ffd38"
+            }
+        },
+        {
+            "id": "http://example.edu/http://example.edu/ec05c0e5-3215-4707-a58e-2123d35ffd38" ,
+            "type": "AssessmentComponent",
+            "hasChild": [
+                "http://example.edu/2a45a345-8431-4a01-b645-a103d0d40ab" ,
+                "http://example.edu/e752fe59-4cc3-402a-8c2d-b2cc51e5dee" ,
+                "http://example.edu/051a2f7a-ab1c-491a-8d97-abb4a4d83915" ,
+                "http://example.edu/4fec78ed-f39f-4a63-b495-a15d40583b41"
+            ],
+            "hasCondition": {
+                "@id": "_:5e20ef3a-4348-4021-ae2e-0ee533bc3a3f" ,
+                "description": {"en-US": "Select one or the other of the two options"} ,
+                "logicalOperand": "OR",
+                "hasCondition": [
+                    {
+                        "@id": "_:f1ea44df-c658-43ee-894e-6e5cd0a6034c" ,
+                        "type": "ComponentCondition",
+                        "leftOperand": "reqNum" , 
+                        "operand": "=" ,
+                        "rightOperand": 2 ,
+                        "targetComponent": [
+                            "http://example.edu/e752fe59-4cc3-402a-8c2d-b2cc51e5dee" ,
+                            "http://example.edu/051a2f7a-ab1c-491a-8d97-abb4a4d83915" ,
+                            "http://example.edu/4fec78ed-f39f-4a63-b495-a15d40583b41"     
+                        ]
+                    },
+                    {
+                        "@id": "_:4fb3d3c2-6273-4ba5-ba71-68fe5045b113" ,
+                        "type": "ComponentCondition" ,
+                        "leftOperand": "reqNum" ,
+                        "operand": "=" ,
+                        "rightOperand": 1 ,
+                        "targetComponent": "http://example.edu/2a45a345-8431-4a01-b645-a103d0d40ab"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "http://example.edu/2a45a345-8431-4a01-b645-a103d0d40ab",
+            "type": "CourseComponent",
+            "name": {"@en-US": "Course A"} ,
+            "hasChild": [
+                "http://example.edu/e752fe59-4cc3-402a-8c2d-b2cc51e5dee" ,
+                "http://example.edu/051a2f7a-ab1c-491a-8d97-abb4a4d83915" ,
+                "http://example.edu/4fec78ed-f39f-4a63-b495-a15d40583b41"     
+            ],
+            "hasCondition": [
+                {
+                    "@id": "_:f1ea44df-c658-43ee-894e-6e5cd0a6034c" ,
+                    "type": "ComponentCondition",
+                    "leftOperand": "reqNum" , 
+                    "operand": "=" ,
+                    "rightOperand": 2 ,
+                    "targetComponent": [
+                        "http://example.edu/e752fe59-4cc3-402a-8c2d-b2cc51e5dee" ,
+                        "http://example.edu/051a2f7a-ab1c-491a-8d97-abb4a4d83915" ,
+                        "http://example.edu/4fec78ed-f39f-4a63-b495-a15d40583b41"
+                    ]
+                }
+            ] 
+        },
+        {
+            "id": "http://example.edu/e752fe59-4cc3-402a-8c2d-b2cc51e5dee" ,
+            "type": "CourseComponent",
+            "name": {"@en-US": "Course B"}
+        },
+        {
+            "id": "http://example.edu/051a2f7a-ab1c-491a-8d97-abb4a4d83915" ,
+            "type": "ceterms:CourseComponent",
+            "name": {"@en-US": "Course C"}
+        },
+        {
+            "id": "http://example.edu/4fec78ed-f39f-4a63-b495-a15d40583b41" ,
+            "type": "ceterms:CourseComponent" ,
+            "name": {"@en-US": "Course D"}
+        }
+    ]
+}
