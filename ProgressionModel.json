@@ -1,0 +1,45 @@
+{
+    "@context": "http://example.org/schema/context/json",
+    "@graph": [
+        {
+            "@type": "ConceptScheme",
+            "@id": "http://example.org/conceptScheme/TermType",
+            "rdfs:label": {"en-US": "Term Type"},
+            "rdfs:comment": {"en-US": "Acme Community College semester terms for a student's 2-year program of study."},
+            "skos:hasTopConcept": [
+                "1stTerm",
+                "2ndTerm",
+                "3ndTerm",
+                "4thTerm"
+            ]
+        },
+        {
+            "@type": "Concept",
+            "@id": "http://example.org/concept/1stTerm",
+            "skos:prefLabel": {"en-US": "First Term"} ,
+            "skos:definition": {"en-US": "First semster term in a student's two year program of study."} ,
+            "skos:inScheme": "http://example.org/conceptScheme/TermType"
+        } ,
+        {
+            "@type": "Concept",
+            "@id": "http://example.org/concept/2stTerm",
+            "skos:prefLabel": {"en-US": "Second Term"} ,
+            "skos:definition": {"en-US": "Second semster term in a student's two year program of study."} ,
+            "skos:inScheme": "http://example.org/conceptScheme/TermType"
+        } ,
+        {
+            "@type": "Concept",
+            "@id": "http://example.org/concept/3stTerm",
+            "skos:prefLabel": {"en-US": "Third Term"} ,
+            "skos:definition": {"en-US": "Third semster term in a student's two year program of study."} ,
+            "skos:inScheme": "http://example.org/conceptScheme/TermType"
+        } ,
+        {
+            "@type": "Concept",
+            "@id": "http://example.org/concept/4thTerm",
+            "skos:prefLabel": {"en-US": "Fourth Term"} ,
+            "skos:definition": {"en-US": "Fourth semster term in a student's two year program of study."} ,
+            "skos:inScheme": "http://example.org/conceptScheme/TermType"
+        }
+    ]
+}
